@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Compassionate, non-judgmental information about self-harm — what it is, why it happens, and how to find support. MindfulHaven." />
+  <title>Self-Harm — Information, Support &amp; Recovery | MindfulHaven</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
+  <style>
+    .sh-safe-note {
+      background: var(--color-accent);
+      border: 2px solid var(--color-secondary);
+      border-radius: var(--radius-lg);
+      padding: var(--space-6) var(--space-8);
+      margin-bottom: var(--space-8);
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+      display: flex;
+      gap: var(--space-4);
+      align-items: flex-start;
+    }
+    .sh-safe-note-icon { font-size: 1.5rem; flex-shrink: 0; }
+    .sh-crisis-top {
+      background: linear-gradient(135deg, #1E3D1E, #2A4A2A);
+      border-radius: var(--radius-xl);
+      padding: var(--space-8) var(--space-10);
+      color: #fff;
+      margin-bottom: var(--space-12);
+    }
+    .sh-crisis-top h3 { color: #a8e6a8; margin-bottom: var(--space-3); }
+    .sh-crisis-top p  { color: rgba(255,255,255,0.8); margin-bottom: var(--space-4); }
+    .sh-crisis-numbers {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      margin-bottom: var(--space-4);
+    }
+    .sh-crisis-pill {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: var(--radius-full);
+      padding: 0.5rem 1.25rem;
+      font-size: var(--text-sm);
+      font-weight: 600;
+      color: #fff;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .sh-crisis-pill:hover { background: rgba(255,255,255,0.22); color: #fff; }
+    .alternatives-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: var(--space-4);
+      margin: var(--space-6) 0;
+    }
+    .alt-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-5);
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-3);
+      transition: all var(--transition);
+    }
+    .alt-card:hover {
+      border-color: var(--color-secondary);
+      background: var(--color-accent);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-sm);
+    }
+    .alt-icon {
+      font-size: 1.6rem;
+      flex-shrink: 0;
+    }
+    .alt-card h5 { font-size: var(--text-sm); margin-bottom: 4px; color: var(--color-heading); }
+    .alt-card p  { font-size: var(--text-xs); color: var(--color-text-muted); margin: 0; }
+    .tab-group {
+      display: flex;
+      border-bottom: 2px solid var(--color-border);
+      margin-bottom: var(--space-8);
+      gap: var(--space-2);
+    }
+    .tab-btn {
+      padding: 0.75rem 1.5rem;
+      background: none;
+      border: none;
+      border-bottom: 3px solid transparent;
+      margin-bottom: -2px;
+      font-family: var(--font-body);
+      font-size: var(--text-sm);
+      font-weight: 600;
+      color: var(--color-text-muted);
+      cursor: pointer;
+      border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+      transition: all var(--transition);
+    }
+    .tab-btn:hover { color: var(--color-primary-dark); background: var(--color-accent); }
+    .tab-btn.active { color: var(--color-primary-dark); border-bottom-color: var(--color-primary); }
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; }
+    @media (max-width: 768px) {
+      .sh-crisis-top { padding: var(--space-6); }
+      .sh-safe-note { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <div class="crisis-banner" role="alert" aria-live="assertive">
+    <p>⚡ Struggling right now? Call <a href="tel:116123">116 123</a> (Samaritans) or text SHOUT to <a href="sms:85258">85258</a> — free, 24/7, confidential</p>
+  </div>
+
+  <header>
+    <nav class="navbar" id="navbar" aria-label="Main navigation">
+      <div class="container">
+        <a href="../index.html" class="nav-logo" aria-label="MindfulHaven Home">
+          <div class="nav-logo-icon" aria-hidden="true">🌿</div>
+          <div><div class="nav-logo-text">MindfulHaven</div><div class="nav-logo-sub">Mental Health for Everyone</div></div>
+        </a>
+        <ul class="nav-links" role="list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="what-is-mental-health.html">What is Mental Health</a></li>
+          <li><a href="mental-health-problems.html">Mental Health Problems</a></li>
+          <li><a href="self-harm.html" class="active" aria-current="page">Self-Harm</a></li>
+          <li><a href="get-help.html">Get Help Now</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="nav-search-btn" id="searchBtn" aria-label="Open search">🔍</button>
+          <a href="../index.html#donate" class="btn btn-donate btn-sm">Donate</a>
+          <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="../index.html">🏠 Home</a>
+      <a href="what-is-mental-health.html">🧠 What is Mental Health</a>
+      <a href="mental-health-problems.html">💙 Mental Health Problems</a>
+      <a href="self-harm.html">🩹 Self-Harm</a>
+      <a href="get-help.html">🆘 Get Help Now</a>
+      <a href="resources.html">📚 Resources</a>
+      <a href="about.html">ℹ️ About Us</a>
+      <a href="contact.html">✉️ Contact</a>
+    </div>
+  </header>
+
+  <div class="search-overlay" id="searchOverlay" role="dialog" aria-modal="true" aria-label="Search">
+    <div class="search-box">
+      <button class="search-close" id="searchClose" aria-label="Close search">✕</button>
+      <h3>Search MindfulHaven</h3>
+      <div class="search-input-wrap">
+        <span class="search-icon" aria-hidden="true">🔍</span>
+        <input type="search" id="searchInput" placeholder="Try 'self-harm', 'anxiety', or 'depression'..." aria-label="Search" />
+      </div>
+      <div id="searchResults" style="margin-top:1rem;"></div>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a>
+          <span class="breadcrumb-sep" aria-hidden="true">›</span>
+          <span aria-current="page">Self-Harm</span>
+        </nav>
+        <h1>Self-Harm</h1>
+        <p>Compassionate, non-judgmental information about self-harm — understanding it, finding alternatives, and taking steps toward recovery.</p>
+      </div>
+    </section>
+
+    <!-- Safe Messaging Note -->
+    <section class="section-sm" aria-label="Content note">
+      <div class="container" style="max-width: 860px;">
+        <div class="sh-safe-note" role="note">
+          <div class="sh-safe-note-icon" aria-hidden="true">🌿</div>
+          <div>
+            <strong>A note before you read:</strong> This page discusses self-harm in an honest but carefully considered way. We follow safe messaging guidelines —
+            we do not describe specific methods or graphic details. If you are in distress right now, please
+            <a href="get-help.html" style="color:var(--color-primary-dark); font-weight:600;">get help here</a> or call
+            <a href="tel:116123" style="color:var(--color-primary-dark); font-weight:600;">116 123</a> (Samaritans, free, 24/7).
+          </div>
+        </div>
+
+        <!-- Always-visible crisis box -->
+        <div class="sh-crisis-top" role="complementary" aria-label="Crisis support numbers">
+          <h3>🆘 Need help right now?</h3>
+          <p>You don't have to be in immediate danger to reach out. If you're struggling with urges to hurt yourself, please contact one of these free services:</p>
+          <div class="sh-crisis-numbers">
+            <a href="tel:116123" class="sh-crisis-pill">📞 Samaritans — 116 123</a>
+            <a href="sms:85258" class="sh-crisis-pill">💬 Shout — Text 85258</a>
+            <a href="tel:08001111" class="sh-crisis-pill">👶 Childline — 0800 1111</a>
+            <a href="tel:999" class="sh-crisis-pill">🚨 Emergency — 999</a>
+          </div>
+          <p style="font-size:var(--text-sm); color:rgba(255,255,255,0.6); margin:0;">All lines are free and confidential. You don't need to be in crisis to call — you can ring just to talk.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tabs: For Me / For Someone Else -->
+    <section class="section" style="padding-top: var(--space-4);" aria-labelledby="tabs-heading">
+      <div class="container" style="max-width: 860px;">
+        <h2 id="tabs-heading" class="sr-only">Self-Harm Information</h2>
+        <div class="tab-group" role="tablist" aria-label="Choose your perspective">
+          <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="tab-me" id="btn-me">I self-harm or feel like hurting myself</button>
+          <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-other" id="btn-other">Someone I know self-harms</button>
+          <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-info" id="btn-info">I want to understand self-harm</button>
+        </div>
+
+        <!-- Tab: For Me -->
+        <div id="tab-me" class="tab-panel active" role="tabpanel" aria-labelledby="btn-me">
+          <div class="fade-in">
+            <div class="highlight-box" style="margin-bottom:var(--space-6);">
+              <p>
+                <strong>You are not alone.</strong> Self-harm is more common than many people realise. It doesn't mean you're
+                broken, attention-seeking, or beyond help. It usually means you're in pain and haven't yet found another way to cope.
+                That can change — and you deserve support to find it.
+              </p>
+            </div>
+
+            <h3 style="margin-bottom:var(--space-4);">Why people self-harm</h3>
+            <p>Self-harm is often a way of coping with overwhelming emotions that feel impossible to manage or express any other way. People describe it as:</p>
+            <ul style="padding-left:var(--space-6);display:flex;flex-direction:column;gap:var(--space-2);margin-bottom:var(--space-6);list-style:disc;">
+              <li style="color:var(--color-text-muted);">A way to make emotional pain feel more tangible or real</li>
+              <li style="color:var(--color-text-muted);">A method of releasing feelings that feel impossible to express in words</li>
+              <li style="color:var(--color-text-muted);">A way to feel something when everything feels numb</li>
+              <li style="color:var(--color-text-muted);">A form of self-punishment driven by shame or guilt</li>
+              <li style="color:var(--color-text-muted);">A way to regain a sense of control when life feels overwhelming</li>
+            </ul>
+            <p style="color:var(--color-text-muted);">
+              There is no single reason. Whatever yours is — it's real, it matters, and it can be addressed with the right support.
+            </p>
+
+            <h3 style="margin:var(--space-8) 0 var(--space-4);">When you feel the urge — things to try instead</h3>
+            <p>These are not about simply resisting. They are about giving your body and mind an alternative way to process what you're feeling in that moment.</p>
+
+            <div class="alternatives-grid">
+              <div class="alt-card">
+                <div class="alt-icon" aria-hidden="true">🧊</div>
+                <div>
+                  <h5>Hold ice cubes</h5>
+                  <p>The intense cold sensation can interrupt the urge and give your body something physical to focus on.</p>
+                </div>
+              </div>
+              <div class="alt-card">
+                <div class="alt-icon" aria-hidden="true">🏃</div>
+                <div>
+                  <h5>Move intensely</h5>
+                  <p>Run, do star jumps, punch a pillow. Physical exertion can release the emotional pressure quickly.</p>
+                </div>
+              </div>
+              <div class="alt-card">
+                <div class="alt-icon" aria-hidden="true">🎨</div>
+                <div>
+                  <h5>Express it creatively</h5>
+                  <p>Draw, write, paint or scream into a pillow. Give the emotion somewhere to go outside your body.</p>
+                </div>
+              </div>
+              <div class="alt-card">
+                <div class="alt-icon" aria-hidden="true">📞</div>
+                <div>
+                  <h5>Call or text someone</h5>
+                  <p>Call a helpline (116 123), text a friend, or message a crisis service. You don't have to be alone with this.</p>
+                </div>
+              </div>
+              <div class="alt-card">
+                <div class="alt-icon" aria-hidden="true">🌬️</div>
+                <div>
+                  <h5>Box breathing</h5>
+                  <p>Inhale 4 counts, hold 4, exhale 4, hold 4. Repeat until the intensity begins to drop.</p>
+                </div>
+              </div>
+              <div class="alt-card">
+                <div class="alt-icon" aria-hidden="true">🛁</div>
+                <div>
+                  <h5>Intense sensations (safe)</h5>
+                  <p>A very cold or warm shower, strong flavours, or smelling something sharp can shift your nervous system state.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="highlight-box" style="margin:var(--space-6) 0;">
+              <p>
+                <strong>💡 Important:</strong> These alternatives work differently for different people. If you don't find them helpful, that's okay —
+                it doesn't mean you've failed. It means you need personalised support to find what works for you,
+                which a therapist or counsellor can help with.
+              </p>
+            </div>
+
+            <h3 style="margin:var(--space-8) 0 var(--space-4);">Steps to getting help</h3>
+            <div class="step-guide">
+              <div class="step-item">
+                <div class="step-num" aria-hidden="true">1</div>
+                <div class="step-content">
+                  <h4>Tell someone you trust</h4>
+                  <p>This is often the hardest step. You don't have to explain everything — just saying "I've been hurting myself and I need help" is enough to start.</p>
+                </div>
+              </div>
+              <div class="step-item">
+                <div class="step-num" aria-hidden="true">2</div>
+                <div class="step-content">
+                  <h4>See your GP</h4>
+                  <p>Your GP will not judge you. They can assess your welfare, tend to any physical injuries, and refer you to specialist mental health support. Everything is confidential.</p>
+                </div>
+              </div>
+              <div class="step-item">
+                <div class="step-num" aria-hidden="true">3</div>
+                <div class="step-content">
+                  <h4>Ask for a mental health referral</h4>
+                  <p>Therapies like DBT (Dialectical Behaviour Therapy) and CBT are very effective for helping people who self-harm find alternative strategies to manage difficult emotions.</p>
+                </div>
+              </div>
+              <div class="step-item">
+                <div class="step-num" aria-hidden="true">4</div>
+                <div class="step-content">
+                  <h4>Be patient and kind with yourself</h4>
+                  <p>Recovery is not linear. There may be setbacks. A relapse doesn't erase your progress — it's part of the process. You deserve compassion, from others and from yourself.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="crisis-cta" style="margin-top:var(--space-8);background:var(--color-accent);border-color:var(--color-secondary);">
+              <h3 style="color:var(--color-primary-dark);">Ready to take the next step?</h3>
+              <p style="color:var(--color-text-muted);">You deserve support. There are people who understand what you're going through.</p>
+              <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+                <a href="get-help.html" class="btn btn-primary">Get Help Now</a>
+                <a href="tel:116123" class="btn btn-outline">Call 116 123</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab: Supporting Someone -->
+        <div id="tab-other" class="tab-panel" role="tabpanel" aria-labelledby="btn-other">
+          <div class="fade-in">
+            <div class="highlight-box" style="margin-bottom:var(--space-6);">
+              <p>
+                <strong>What you're feeling is valid too.</strong> Discovering that someone you care about self-harms can feel shocking, frightening,
+                and overwhelming. You may not know what to say or do. This section is here to help.
+              </p>
+            </div>
+
+            <div class="grid-2" style="gap:var(--space-8); margin-bottom: var(--space-10);">
+              <div>
+                <h3 style="margin-bottom:var(--space-4);color:var(--color-primary-dark);">✅ Things that can help</h3>
+                <div class="step-guide">
+                  <div class="step-item">
+                    <div class="step-num" aria-hidden="true">✓</div>
+                    <div class="step-content">
+                      <h4>Stay calm and listen</h4>
+                      <p>Your reaction in the first moment matters enormously. Try not to panic or show disgust — respond with warmth and openness above all else.</p>
+                    </div>
+                  </div>
+                  <div class="step-item">
+                    <div class="step-num" aria-hidden="true">✓</div>
+                    <div class="step-content">
+                      <h4>Ask open questions</h4>
+                      <p>"How long have you been feeling this way?" or "What's been going on for you?" gives them space to share at their own pace.</p>
+                    </div>
+                  </div>
+                  <div class="step-item">
+                    <div class="step-num" aria-hidden="true">✓</div>
+                    <div class="step-content">
+                      <h4>Believe and validate them</h4>
+                      <p>Trust what they share. Say "Thank you for telling me — that must have taken courage." Don't minimise or compare their pain.</p>
+                    </div>
+                  </div>
+                  <div class="step-item">
+                    <div class="step-num" aria-hidden="true">✓</div>
+                    <div class="step-content">
+                      <h4>Gently encourage professional help</h4>
+                      <p>Offer to help them see a GP, accompany them to an appointment, or look into options together. Don't force — support.</p>
+                    </div>
+                  </div>
+                  <div class="step-item">
+                    <div class="step-num" aria-hidden="true">✓</div>
+                    <div class="step-content">
+                      <h4>Look after yourself too</h4>
+                      <p>Supporting someone through this is emotionally demanding. Speak to a professional or support group yourself if you need it.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h3 style="margin-bottom:var(--space-4);color:var(--color-crisis);">⚠️ Things to avoid</h3>
+                <div class="step-guide">
+                  <div class="step-item">
+                    <div class="step-num" style="background:linear-gradient(135deg,#e8a0a0,#c97070);" aria-hidden="true">✗</div>
+                    <div class="step-content">
+                      <h4>Don't react with anger or disgust</h4>
+                      <p>Even if you feel frightened, a harsh reaction may cause them to shut down and stop seeking help altogether.</p>
+                    </div>
+                  </div>
+                  <div class="step-item">
+                    <div class="step-num" style="background:linear-gradient(135deg,#e8a0a0,#c97070);" aria-hidden="true">✗</div>
+                    <div class="step-content">
+                      <h4>Don't dismiss or minimise</h4>
+                      <p>Saying "it's just a phase" or "others have it worse" invalidates their pain and damages trust quickly.</p>
+                    </div>
+                  </div>
+                  <div class="step-item">
+                    <div class="step-num" style="background:linear-gradient(135deg,#e8a0a0,#c97070);" aria-hidden="true">✗</div>
+                    <div class="step-content">
+                      <h4>Don't make promises you can't keep</h4>
+                      <p>If they ask you to keep it secret, say honestly: "I care too much about you to promise that if I think you're in danger."</p>
+                    </div>
+                  </div>
+                  <div class="step-item">
+                    <div class="step-num" style="background:linear-gradient(135deg,#e8a0a0,#c97070);" aria-hidden="true">✗</div>
+                    <div class="step-content">
+                      <h4>Don't try to fix it alone</h4>
+                      <p>You are not their therapist. Your role is to be present and supportive, and to help connect them with professional care.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="helpline-card" style="flex-wrap:wrap; margin-bottom:var(--space-8);">
+              <div class="helpline-icon" aria-hidden="true">📞</div>
+              <div>
+                <h4>Support for concerned family and friends</h4>
+                <p>You can call Samaritans (116 123) yourself if you're struggling to cope with worry about someone. They support those concerned about others, not just those in crisis themselves.</p>
+              </div>
+              <a href="tel:116123" class="btn btn-outline btn-sm" style="margin-left:auto;">Call Now</a>
+            </div>
+
+            <div class="card card-green card-body">
+              <h4 style="margin-bottom:var(--space-3);">🚨 When to act immediately</h4>
+              <p style="font-size:var(--text-sm);color:var(--color-text-muted);">
+                If someone has injured themselves severely, is unconscious, or has taken an overdose —
+                <strong>call 999 immediately.</strong> In this situation, their physical safety comes first.
+                You can stay with them and keep them calm while waiting for help.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab: Understanding Self-Harm -->
+        <div id="tab-info" class="tab-panel" role="tabpanel" aria-labelledby="btn-info">
+          <div class="fade-in">
+            <h3 style="margin-bottom:var(--space-4);">What is self-harm?</h3>
+            <p>
+              Self-harm is when someone deliberately hurts themselves as a way of coping with emotional pain, distress, or difficult feelings.
+              It is <strong>not</strong> usually about wanting to die — it is most often a coping mechanism to manage overwhelming emotions.
+            </p>
+            <p style="color:var(--color-text-muted);">
+              Self-harm affects people of all ages, genders, and backgrounds. It is estimated that around 1 in 12 young people in the UK self-harm.
+              It is more common than many people realise, and the shame associated with it often prevents people from seeking help.
+            </p>
+
+            <h3 style="margin:var(--space-8) 0 var(--space-4);">Common signs someone may be self-harming</h3>
+            <p style="color:var(--color-text-muted);margin-bottom:var(--space-4);">
+              These signs do not confirm self-harm, but may be reasons to gently start a conversation:
+            </p>
+            <div class="grid-2" style="gap:var(--space-4);margin-bottom:var(--space-8);">
+              <div class="card card-body" style="padding:var(--space-5);">
+                <h5 style="margin-bottom:var(--space-3);color:var(--color-heading);">Physical signs</h5>
+                <ul style="list-style:disc;padding-left:var(--space-4);display:flex;flex-direction:column;gap:var(--space-2);">
+                  <li style="font-size:var(--text-sm);color:var(--color-text-muted);">Unexplained cuts, burns, or bruises</li>
+                  <li style="font-size:var(--text-sm);color:var(--color-text-muted);">Wearing long sleeves or trousers in warm weather</li>
+                  <li style="font-size:var(--text-sm);color:var(--color-text-muted);">Reluctance to show certain areas of the body</li>
+                  <li style="font-size:var(--text-sm);color:var(--color-text-muted);">Spending long periods alone in rooms</li>
+                </ul>
+              </div>
+              <div class="card card-body" style="padding:var(--space-5);">
+                <h5 style="margin-bottom:var(--space-3);color:var(--color-heading);">Emotional &amp; behavioural signs</h5>
+                <ul style="list-style:disc;padding-left:var(--space-4);display:flex;flex-direction:column;gap:var(--space-2);">
+                  <li style="font-size:var(--text-sm);color:var(--color-text-muted);">Extreme mood swings or emotional numbness</li>
+                  <li style="font-size:var(--text-sm);color:var(--color-text-muted);">Social withdrawal from friends and family</li>
+                  <li style="font-size:var(--text-sm);color:var(--color-text-muted);">Expressions of worthlessness or self-loathing</li>
+                  <li style="font-size:var(--text-sm);color:var(--color-text-muted);">Giving away possessions or saying goodbyes</li>
+                </ul>
+              </div>
+            </div>
+
+            <h3 style="margin-bottom:var(--space-4);">The link between self-harm and mental health</h3>
+            <p>Self-harm often co-occurs with other mental health conditions, including:</p>
+            <div style="display:flex;flex-wrap:wrap;gap:var(--space-3);margin-bottom:var(--space-6);">
+              <span class="section-label" style="cursor:default;">Depression</span>
+              <span class="section-label" style="cursor:default;">Anxiety</span>
+              <span class="section-label" style="cursor:default;">PTSD</span>
+              <span class="section-label" style="cursor:default;">Eating Disorders</span>
+              <span class="section-label" style="cursor:default;">Borderline Personality Disorder</span>
+              <span class="section-label" style="cursor:default;">Trauma</span>
+            </div>
+            <p style="color:var(--color-text-muted);">
+              This means that treating the underlying mental health condition — through therapy, medication, and support — is often central to helping someone stop self-harming.
+              Recovery is absolutely possible with the right support.
+            </p>
+
+            <h3 style="margin:var(--space-8) 0 var(--space-4);">Frequently asked questions</h3>
+            <div data-accordion-group>
+              <div class="accordion-item">
+                <button class="accordion-header" aria-expanded="false">
+                  Is self-harm the same as a suicide attempt?
+                  <span class="accordion-icon" aria-hidden="true">+</span>
+                </button>
+                <div class="accordion-body">
+                  <p>Not usually. Most self-harm is a way of coping with emotional pain, not an attempt to die. However, self-harm does increase the risk of suicide over time, which is why early intervention and support are so important. Someone who self-harms should always be taken seriously and offered appropriate support.</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="accordion-header" aria-expanded="false">
+                  Does self-harm only happen in young people?
+                  <span class="accordion-icon" aria-hidden="true">+</span>
+                </button>
+                <div class="accordion-body">
+                  <p>No. While self-harm is more commonly reported among young people, it affects adults of all ages too. Older adults may be less likely to be identified or supported, but they deserve the same level of care and compassion.</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="accordion-header" aria-expanded="false">
+                  Is self-harm attention-seeking?
+                  <span class="accordion-icon" aria-hidden="true">+</span>
+                </button>
+                <div class="accordion-body">
+                  <p>This is a harmful myth. Even if someone does express their pain in a visible way, that is a sign they need support — not something to judge. Most people who self-harm go to great lengths to hide it. The phrase "attention-seeking" is outdated and dismissive. The right response is always compassion and help.</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="accordion-header" aria-expanded="false">
+                  Can someone recover from self-harm?
+                  <span class="accordion-icon" aria-hidden="true">+</span>
+                </button>
+                <div class="accordion-body">
+                  <p>Yes — absolutely. With the right support, most people are able to reduce and stop self-harming. Therapies like DBT (Dialectical Behaviour Therapy) are specifically designed to help people build better emotional regulation skills. Recovery takes time, but it is real and achievable.</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="accordion-header" aria-expanded="false">
+                  Should I tell someone if I know a friend is self-harming?
+                  <span class="accordion-icon" aria-hidden="true">+</span>
+                </button>
+                <div class="accordion-body">
+                  <p>If you are seriously concerned about someone's safety, it is often right to involve a trusted adult or professional — even if your friend asked you not to. You can phrase it as: "I'm sharing this because I care about them." If someone is in immediate danger, always call 999. Your friend may be angry at first, but keeping them safe is what matters most.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Treatment -->
+    <section class="section" style="background:var(--color-bg2);" aria-labelledby="treatment-heading">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-label">Recovery</span>
+          <h2 id="treatment-heading" class="section-title">Treatment &amp; Recovery</h2>
+          <p class="section-desc">Recovery from self-harm is possible. These approaches are used by mental health professionals to help people find lasting change.</p>
+        </div>
+        <div class="grid-3">
+          <div class="card card-body fade-in" style="text-align:center;">
+            <div style="font-size:2.5rem;margin-bottom:var(--space-3);" aria-hidden="true">🧠</div>
+            <h4>DBT — Dialectical Behaviour Therapy</h4>
+            <p style="font-size:var(--text-sm);color:var(--color-text-muted);">
+              The most widely recommended therapy for self-harm. DBT teaches emotional regulation, distress tolerance, mindfulness, and interpersonal skills — all the tools self-harm is often used to replace.
+            </p>
+          </div>
+          <div class="card card-body fade-in fade-in-delay-1" style="text-align:center;">
+            <div style="font-size:2.5rem;margin-bottom:var(--space-3);" aria-hidden="true">🗣️</div>
+            <h4>CBT — Cognitive Behavioural Therapy</h4>
+            <p style="font-size:var(--text-sm);color:var(--color-text-muted);">
+              Helps identify the thoughts and patterns that lead to self-harm, and builds healthier responses to difficult emotions. Often used alongside DBT or other therapeutic approaches.
+            </p>
+          </div>
+          <div class="card card-body fade-in fade-in-delay-2" style="text-align:center;">
+            <div style="font-size:2.5rem;margin-bottom:var(--space-3);" aria-hidden="true">👥</div>
+            <h4>Peer Support &amp; Group Therapy</h4>
+            <p style="font-size:var(--text-sm);color:var(--color-text-muted);">
+              Connecting with others who understand can reduce shame and isolation dramatically. Facilitated support groups for self-harm are available through the NHS and charities like MIND and SANE.
+            </p>
+          </div>
+        </div>
+
+        <div style="margin-top:var(--space-12);text-align:center;">
+          <a href="get-help.html" class="btn btn-primary" style="margin-right:var(--space-4);">💚 Find Professional Help</a>
+          <a href="resources.html" class="btn btn-outline">Browse All Resources</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="../index.html" class="nav-logo"><div class="nav-logo-icon" aria-hidden="true">🌿</div><div><div class="nav-logo-text">MindfulHaven</div><div class="nav-logo-sub">Mental Health for Everyone</div></div></a>
+            <p class="footer-desc">Free, evidence-based mental health and self-harm information and support for everyone.</p>
+            <div class="footer-social" aria-label="Social media links">
+              <a href="#" class="social-icon" aria-label="Twitter">𝕏</a>
+              <a href="#" class="social-icon" aria-label="Facebook">f</a>
+              <a href="#" class="social-icon" aria-label="Instagram">📷</a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title">Self-Harm</div>
+            <ul class="footer-links">
+              <li><a href="#tab-me">If You Self-Harm</a></li>
+              <li><a href="#tab-other">Supporting Someone</a></li>
+              <li><a href="#tab-info">Understanding Self-Harm</a></li>
+              <li><a href="#treatment-heading">Treatment &amp; Recovery</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title">Mental Health</div>
+            <ul class="footer-links">
+              <li><a href="what-is-mental-health.html">What is Mental Health?</a></li>
+              <li><a href="mental-health-problems.html">Mental Health Problems</a></li>
+              <li><a href="get-help.html">Get Help Now</a></li>
+              <li><a href="resources.html">Resources</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title">Urgent Help</div>
+            <ul class="footer-links">
+              <li><a href="tel:116123">📞 Samaritans: 116 123</a></li>
+              <li><a href="sms:85258">💬 Crisis Text: 85258</a></li>
+              <li><a href="tel:999">🚨 Emergency: 999</a></li>
+              <li><a href="tel:111">🏥 NHS: 111</a></li>
+              <li><a href="tel:08001111">👶 Childline: 0800 1111</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 MindfulHaven. Registered Charity No. 123456. All rights reserved.</p>
+        <nav class="footer-bottom-links" aria-label="Footer legal links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Accessibility</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+  <script src="../js/main.js"></script>
+  <script>
+    // Tab switching for self-harm page
+    (function() {
+      const tabs = document.querySelectorAll('.tab-btn');
+      const panels = document.querySelectorAll('.tab-panel');
+      tabs.forEach(btn => {
+        btn.addEventListener('click', () => {
+          tabs.forEach(t => { t.classList.remove('active'); t.setAttribute('aria-selected','false'); });
+          panels.forEach(p => p.classList.remove('active'));
+          btn.classList.add('active');
+          btn.setAttribute('aria-selected','true');
+          document.getElementById(btn.getAttribute('aria-controls')).classList.add('active');
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
