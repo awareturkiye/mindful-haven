@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="MindfulHaven — Free mental health information, self-help resources, and support guidance for everyone. Learn about anxiety, depression, stress and more." />
+  <meta name="keywords" content="mental health, anxiety, depression, stress, wellbeing, self-help, support" />
+  <meta property="og:title" content="MindfulHaven — Good Mental Health for Everyone" />
+  <meta property="og:description" content="Free mental health information, self-help resources and support guidance for everyone." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#6BAA6B" />
+  <title>MindfulHaven — Good Mental Health for Everyone</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
+</head>
+<body>
+
+  <!-- Skip to content -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Crisis Banner -->
+  <div class="crisis-banner" role="alert" aria-live="polite">
+    <p>⚡ In crisis? Call <a href="tel:116123">116 123</a> (Samaritans) or text SHOUT to <a href="sms:85258">85258</a> — available 24/7, free &amp; confidential</p>
+  </div>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar" id="navbar" aria-label="Main navigation">
+      <div class="container">
+        <a href="index.html" class="nav-logo" aria-label="MindfulHaven Home">
+          <div class="nav-logo-icon" aria-hidden="true">🌿</div>
+          <div>
+            <div class="nav-logo-text">MindfulHaven</div>
+            <div class="nav-logo-sub">Mental Health for Everyone</div>
+          </div>
+        </a>
+
+        <ul class="nav-links" role="list">
+          <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+          <li><a href="pages/what-is-mental-health.html">What is Mental Health</a></li>
+          <li><a href="pages/mental-health-problems.html">Mental Health Problems</a></li>
+          <li><a href="pages/self-harm.html">Self-Harm</a></li>
+          <li><a href="pages/get-help.html">Get Help Now</a></li>
+          <li><a href="pages/resources.html">Resources</a></li>
+          <li><a href="pages/about.html">About</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="nav-search-btn" id="searchBtn" aria-label="Open search" title="Search">
+            🔍
+          </button>
+          <a href="#donate" class="btn btn-donate btn-sm">Donate</a>
+          <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
+      <a href="index.html">🏠 Home</a>
+      <a href="pages/what-is-mental-health.html">🧠 What is Mental Health</a>
+      <a href="pages/mental-health-problems.html">💙 Mental Health Problems</a>
+      <a href="pages/self-harm.html">🩹 Self-Harm</a>
+      <a href="pages/get-help.html">🆘 Get Help Now</a>
+      <a href="pages/resources.html">📚 Resources</a>
+      <a href="pages/about.html">ℹ️ About Us</a>
+      <a href="pages/contact.html">✉️ Contact</a>
+      <a href="#donate" class="btn btn-primary" style="text-align:center; margin-top: 0.5rem;">💚 Donate</a>
+    </div>
+  </header>
+
+  <!-- Search Overlay -->
+  <div class="search-overlay" id="searchOverlay" role="dialog" aria-modal="true" aria-label="Search">
+    <div class="search-box">
+      <button class="search-close" id="searchClose" aria-label="Close search">✕</button>
+      <h3>Search MindfulHaven</h3>
+      <div class="search-input-wrap">
+        <span class="search-icon" aria-hidden="true">🔍</span>
+        <input type="search" id="searchInput" placeholder="Try 'anxiety', 'sleep', or 'depression'..." aria-label="Search mental health topics" autofocus />
+      </div>
+      <div id="searchResults" style="margin-top:1rem;"></div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main id="main-content">
+
+    <!-- HERO →→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→ -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero-content fade-in">
+          <div class="hero-badge">
+            <div class="hero-badge-dot" aria-hidden="true"></div>
+            Trusted mental health information
+          </div>
+          <h1 id="hero-heading">
+            Good Mental Health<br>
+            for <span class="highlight">Everyone</span>
+          </h1>
+          <p class="hero-desc">
+            Learn, understand, and support your mental wellbeing.<br>
+            You are not alone — and help is always available.
+          </p>
+          <div class="hero-actions">
+            <a href="pages/get-help.html" class="btn btn-primary" id="hero-get-help">
+              💚 Get Help Now
+            </a>
+            <a href="pages/what-is-mental-health.html" class="btn btn-outline" id="hero-learn-more">
+              Learn More
+            </a>
+          </div>
+          <div class="hero-trust" aria-label="Used by thousands of people">
+            <div class="hero-trust-avatars" aria-hidden="true">
+              <div class="hero-trust-avatar" style="background:#6BAA6B;">A</div>
+              <div class="hero-trust-avatar" style="background:#4E8B4E;">M</div>
+              <div class="hero-trust-avatar" style="background:#8EC98E;">S</div>
+              <div class="hero-trust-avatar" style="background:#A8CFA8; color: #2F3E2F;">J</div>
+            </div>
+            <span style="font-size:0.875rem; color: var(--color-text-muted);">
+              Trusted by <strong>50,000+</strong> people each month
+            </span>
+          </div>
+        </div>
+
+        <div class="hero-image fade-in fade-in-delay-2" aria-hidden="true">
+          <img src="assets/hero-illustration.png" alt="Peaceful nature illustration representing calm and wellbeing" loading="eager" />
+          <div class="hero-image-badge" aria-label="Free and anonymous resources">
+            <div class="hero-image-badge-num">100%</div>
+            <div class="hero-image-badge-label">Free &amp; Confidential</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS BAR →→→→→→→→→→→→→→→→→→→→→→→→→→→→→ -->
+    <section class="stats-bar" aria-label="Mental health statistics">
+      <div class="container">
+        <div class="stat-item fade-in">
+          <div class="stat-number" data-target="1in4" aria-label="One in four">1 in 4</div>
+          <p class="stat-label">People experience a mental health problem each year in the UK</p>
+        </div>
+        <div class="stat-item fade-in fade-in-delay-1">
+          <div class="stat-number" data-counter-target="75" aria-label="75 percent">75%</div>
+          <p class="stat-label">Of mental health problems begin before age 24 — early help matters</p>
+        </div>
+        <div class="stat-item fade-in fade-in-delay-2">
+          <div class="stat-number" aria-label="50,000 plus">50k+</div>
+          <p class="stat-label">People trust MindfulHaven every month for free, accurate information</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOPICS →→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→ -->
+    <section class="section topics-section" aria-labelledby="topics-heading">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-label">Explore Topics</span>
+          <h2 class="section-title" id="topics-heading">Common Mental Health Topics</h2>
+          <p class="section-desc">
+            Understand the signs, causes, and ways to manage common mental health conditions. All information is reviewed by qualified professionals.
+          </p>
+        </div>
+        <div class="grid-4" role="list">
+          <article class="topic-card fade-in" role="listitem">
+            <div class="topic-icon" aria-hidden="true">😰</div>
+            <h3>Anxiety</h3>
+            <p>Persistent worry or fear that affects daily life. Learn to recognise the signs and find effective coping strategies.</p>
+            <a href="pages/mental-health-problems.html#anxiety" class="topic-link">
+              Learn more <span aria-hidden="true">→</span>
+            </a>
+          </article>
+          <article class="topic-card fade-in fade-in-delay-1" role="listitem">
+            <div class="topic-icon" aria-hidden="true">💙</div>
+            <h3>Depression</h3>
+            <p>More than just sadness — depression affects how you think, feel and function. Understand and take back control.</p>
+            <a href="pages/mental-health-problems.html#depression" class="topic-link">
+              Learn more <span aria-hidden="true">→</span>
+            </a>
+          </article>
+          <article class="topic-card fade-in fade-in-delay-2" role="listitem">
+            <div class="topic-icon" aria-hidden="true">🌊</div>
+            <h3>Stress</h3>
+            <p>When pressure becomes overwhelming. Discover practical tools to manage and reduce stress in everyday life.</p>
+            <a href="pages/mental-health-problems.html#stress" class="topic-link">
+              Learn more <span aria-hidden="true">→</span>
+            </a>
+          </article>
+          <article class="topic-card fade-in fade-in-delay-3" role="listitem">
+            <div class="topic-icon" aria-hidden="true">🌙</div>
+            <h3>Sleep</h3>
+            <p>Poor sleep and mental health are deeply linked. Find out how to improve your sleep and support your wellbeing.</p>
+            <a href="pages/mental-health-problems.html#sleep" class="topic-link">
+              Learn more <span aria-hidden="true">→</span>
+            </a>
+          </article>
+        </div>
+        <!-- Self-Harm featured card -->
+        <div style="margin-top:var(--space-6);">
+          <article class="topic-card fade-in" role="listitem" style="background:linear-gradient(135deg,#f0f7f0,var(--color-accent));border-color:var(--color-secondary);">
+            <div style="display:flex;align-items:center;gap:var(--space-4);">
+              <div class="topic-icon" aria-hidden="true" style="background:var(--color-surface);">🩹</div>
+              <div style="flex:1;">
+                <h3 style="margin-bottom:var(--space-2);">Self-Harm</h3>
+                <p style="margin-bottom:var(--space-3);">Compassionate, non-judgmental information about self-harm — understanding it, finding alternatives, and taking steps toward recovery. You are not alone.</p>
+                <a href="pages/self-harm.html" class="topic-link">Learn more <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="grid-4" style="display:none;"><!-- spacer close --></div
+        </div>
+        <div class="text-center mt-8">
+          <a href="pages/mental-health-problems.html" class="btn btn-outline">
+            View All Conditions
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WELLBEING / SUPPORT →→→→→→→→→→→→→→→→→→→→ -->
+    <section class="section wellbeing-section" aria-labelledby="wellbeing-heading">
+      <div class="container">
+        <div class="text-center" style="margin-bottom: var(--space-12);">
+          <span class="section-label">Wellbeing Guides</span>
+          <h2 class="section-title" id="wellbeing-heading">Start Your Journey to Better Mental Health</h2>
+        </div>
+        <div class="wellbeing-grid">
+          <div class="wellbeing-card fade-in">
+            <div class="wellbeing-card-icon" aria-hidden="true">🌱</div>
+            <h3>How to Take Care of Your Mental Health</h3>
+            <p>Simple, evidence-based steps you can take today to improve and maintain your mental wellbeing.</p>
+            <div class="tip-list" aria-label="Wellbeing tips">
+              <div class="tip-item">
+                <div class="tip-num" aria-hidden="true">1</div>
+                <p class="tip-text">Talk to someone you trust about how you're feeling</p>
+              </div>
+              <div class="tip-item">
+                <div class="tip-num" aria-hidden="true">2</div>
+                <p class="tip-text">Stay physically active — even a short walk makes a difference</p>
+              </div>
+              <div class="tip-item">
+                <div class="tip-num" aria-hidden="true">3</div>
+                <p class="tip-text">Eat well, limit alcohol, and prioritise sleep</p>
+              </div>
+              <div class="tip-item">
+                <div class="tip-num" aria-hidden="true">4</div>
+                <p class="tip-text">Practice mindfulness or relaxation techniques daily</p>
+              </div>
+              <div class="tip-item">
+                <div class="tip-num" aria-hidden="true">5</div>
+                <p class="tip-text">Seek professional help if things feel unmanageable</p>
+              </div>
+            </div>
+            <a href="pages/what-is-mental-health.html" class="btn btn-primary">Explore Guide</a>
+          </div>
+
+          <div class="wellbeing-card dark fade-in fade-in-delay-2">
+            <div class="wellbeing-card-icon" aria-hidden="true">🤝</div>
+            <h3>Supporting Someone Else</h3>
+            <p>If someone you care about is struggling, knowing how to help can make all the difference in their recovery.</p>
+            <div class="tip-list" aria-label="Support tips">
+              <div class="tip-item">
+                <div class="tip-num" aria-hidden="true">1</div>
+                <p class="tip-text">Listen without judgement — just being present matters</p>
+              </div>
+              <div class="tip-item">
+                <div class="tip-num" aria-hidden="true">2</div>
+                <p class="tip-text">Ask directly if they're having thoughts of self-harm</p>
+              </div>
+              <div class="tip-item">
+                <div class="tip-num" aria-hidden="true">3</div>
+                <p class="tip-text">Help them access professional support when ready</p>
+              </div>
+              <div class="tip-item">
+                <div class="tip-num" aria-hidden="true">4</div>
+                <p class="tip-text">Look after your own wellbeing too — it's not selfish</p>
+              </div>
+              <div class="tip-item">
+                <div class="tip-num" aria-hidden="true">5</div>
+                <p class="tip-text">Keep checking in — recovery takes time and patience</p>
+              </div>
+            </div>
+            <a href="pages/resources.html" class="btn btn-white">Support Resources</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARTICLES →→→→→→→→→→→→→→→→→→→→→→→→→→→→→→ -->
+    <section class="section articles-section" aria-labelledby="articles-heading">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-label">Latest Articles</span>
+          <h2 class="section-title" id="articles-heading">Expert Insights &amp; Guides</h2>
+          <p class="section-desc">
+            Written and reviewed by mental health professionals, our articles provide clear, practical information you can trust.
+          </p>
+        </div>
+        <div class="grid-3">
+          <article class="article-card fade-in">
+            <div class="article-img" role="img" aria-label="Mindfulness article illustration">🧘</div>
+            <div class="article-body">
+              <span class="article-tag">Mindfulness</span>
+              <h3>10 Mindfulness Techniques That Actually Work</h3>
+              <p>Evidence-based mindfulness practices you can fit into your daily routine, no matter how busy you are.</p>
+              <div class="article-meta">
+                <span>Dr. Sarah Mitchell</span>
+                <span class="article-meta-dot" aria-hidden="true"></span>
+                <span>5 min read</span>
+                <span class="article-meta-dot" aria-hidden="true"></span>
+                <span>Apr 2026</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="article-card fade-in fade-in-delay-1">
+            <div class="article-img" role="img" aria-label="Sleep article illustration">🌙</div>
+            <div class="article-body">
+              <span class="article-tag">Sleep</span>
+              <h3>Why Sleep Is the Foundation of Your Mental Health</h3>
+              <p>Poor sleep doesn't just make you tired — discover the deep connections between sleep and your mental state.</p>
+              <div class="article-meta">
+                <span>Prof. James Owen</span>
+                <span class="article-meta-dot" aria-hidden="true"></span>
+                <span>7 min read</span>
+                <span class="article-meta-dot" aria-hidden="true"></span>
+                <span>Apr 2026</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="article-card fade-in fade-in-delay-2">
+            <div class="article-img" role="img" aria-label="Anxiety article illustration">🌿</div>
+            <div class="article-body">
+              <span class="article-tag">Anxiety</span>
+              <h3>Breaking the Anxiety Cycle: A Practical Guide</h3>
+              <p>Understand what fuels anxiety and learn step-by-step strategies to interrupt the cycle and find relief.</p>
+              <div class="article-meta">
+                <span>Lisa Chen, BACP</span>
+                <span class="article-meta-dot" aria-hidden="true"></span>
+                <span>6 min read</span>
+                <span class="article-meta-dot" aria-hidden="true"></span>
+                <span>Mar 2026</span>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="text-center mt-8">
+          <a href="pages/resources.html" class="btn btn-outline">View All Articles</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS →→→→→→→→→→→→→→→→→→→→→→→→→→ -->
+    <section class="section testimonials-section" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-label">Real Stories</span>
+          <h2 class="section-title" id="testimonials-heading">You Are Not Alone</h2>
+          <p class="section-desc">
+            Thousands of people have found understanding, support and hope through MindfulHaven.
+          </p>
+        </div>
+        <div class="grid-3">
+          <blockquote class="testimonial-card fade-in">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-text">
+              "I was at my lowest point when I found MindfulHaven. The information here helped me understand what I was going through and finally seek the help I needed. I am so grateful."
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" style="background: #6BAA6B;" aria-hidden="true">AK</div>
+              <div>
+                <div class="testimonial-name">Amara K.</div>
+                <div class="testimonial-role">Anxiety recovery journey</div>
+              </div>
+            </div>
+          </blockquote>
+
+          <blockquote class="testimonial-card fade-in fade-in-delay-1">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-text">
+              "As someone who supports a family member with depression, the resources here gave me the language and tools to actually help. I can't recommend this enough."
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" style="background: #4E8B4E;" aria-hidden="true">TR</div>
+              <div>
+                <div class="testimonial-name">Thomas R.</div>
+                <div class="testimonial-role">Supporting a loved one</div>
+              </div>
+            </div>
+          </blockquote>
+
+          <blockquote class="testimonial-card fade-in fade-in-delay-2">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-text">
+              "The self-help guides on sleep and mindfulness completely changed how I manage stress at work. Simple, clear, and actually effective. Thank you MindfulHaven."
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" style="background: #A8CFA8; color: #1A2E1A;" aria-hidden="true">SP</div>
+              <div>
+                <div class="testimonial-name">Sasha P.</div>
+                <div class="testimonial-role">Stress &amp; sleep improvement</div>
+              </div>
+            </div>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARTNERS →→→→→→→→→→→→→→→→→→→→→→→→→→→→→→ -->
+    <section class="partners-section" aria-label="Our partner organisations">
+      <div class="container">
+        <p class="partners-label">Trusted by &amp; partnered with</p>
+        <div class="partners-row" role="list">
+          <div class="partner-logo" role="listitem" aria-label="NHS">NHS</div>
+          <div class="partner-logo" role="listitem" aria-label="Samaritans">Samaritans</div>
+          <div class="partner-logo" role="listitem" aria-label="Mind">Mind</div>
+          <div class="partner-logo" role="listitem" aria-label="SANE">SANE</div>
+          <div class="partner-logo" role="listitem" aria-label="Young Minds">YoungMinds</div>
+          <div class="partner-logo" role="listitem" aria-label="BACP">BACP</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DONATE →→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→ -->
+    <section class="section donate-section" id="donate" aria-labelledby="donate-heading">
+      <div class="container">
+        <div class="donate-inner fade-in">
+          <span class="section-label" style="background:rgba(255,255,255,0.15); color:#fff;">Make a Difference</span>
+          <h2 id="donate-heading" style="margin-top: var(--space-4);">
+            Help Us Support More People
+          </h2>
+          <p>
+            MindfulHaven is a non-profit organisation. Your donation allows us to keep providing free, high-quality mental health resources to everyone who needs them — no matter where they are.
+          </p>
+          <div class="donate-amounts" role="group" aria-label="Select donation amount">
+            <button class="donate-amount-btn" data-amount="5" aria-pressed="false">£5</button>
+            <button class="donate-amount-btn active" data-amount="10" aria-pressed="true">£10</button>
+            <button class="donate-amount-btn" data-amount="25" aria-pressed="false">£25</button>
+            <button class="donate-amount-btn" data-amount="50" aria-pressed="false">£50</button>
+            <button class="donate-amount-btn" data-amount="custom" aria-pressed="false">Other</button>
+          </div>
+          <a href="#donate" class="btn btn-white" id="donate-cta" aria-label="Donate £10 to MindfulHaven">
+            💚 Donate £10 Today
+          </a>
+          <p class="donate-note">
+            🔒 Secure &amp; encrypted · 100% goes to mental health support · UK registered charity
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER →→→→→→→→→→→→→→→→→→→→→→→→→→→→ -->
+    <section class="newsletter-section" aria-labelledby="newsletter-heading">
+      <div class="container">
+        <div class="newsletter-inner">
+          <h3 id="newsletter-heading">Stay Informed &amp; Supported</h3>
+          <p>Get our free monthly newsletter with expert tips, new resources, and mental health news — straight to your inbox.</p>
+          <form class="newsletter-form" id="newsletterForm" novalidate aria-label="Newsletter signup">
+            <label for="newsletterEmail" class="sr-only">Email address</label>
+            <input
+              type="email"
+              id="newsletterEmail"
+              name="email"
+              placeholder="Your email address"
+              required
+              aria-required="true"
+            />
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+          <p style="font-size:0.8rem; color:var(--color-text-muted); margin-top:0.75rem;">
+            No spam, ever. Unsubscribe anytime. Read our <a href="#">Privacy Policy</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER →→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+
+          <div class="footer-brand">
+            <a href="index.html" class="nav-logo" aria-label="MindfulHaven Home">
+              <div class="nav-logo-icon" aria-hidden="true">🌿</div>
+              <div>
+                <div class="nav-logo-text">MindfulHaven</div>
+                <div class="nav-logo-sub">Mental Health for Everyone</div>
+              </div>
+            </a>
+            <p class="footer-desc">
+              MindfulHaven is a non-profit mental health charity providing free, evidence-based information and support resources to everyone who needs them.
+            </p>
+            <div class="footer-social" aria-label="Social media links">
+              <a href="https://twitter.com/MindfulHaven" class="social-icon" aria-label="Twitter">𝕏</a>
+              <a href="https://facebook.com/MindfulHaven" class="social-icon" aria-label="Facebook">f</a>
+              <a href="https://instagram.com/MindfulHaven" class="social-icon" aria-label="Instagram">📷</a>
+              <a href="https://youtube.com/MindfulHaven" class="social-icon" aria-label="YouTube">▶</a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <div class="footer-col-title">Information</div>
+            <ul class="footer-links" role="list">
+              <li><a href="pages/what-is-mental-health.html">What is Mental Health?</a></li>
+              <li><a href="pages/mental-health-problems.html">Mental Health Problems</a></li>
+              <li><a href="pages/mental-health-problems.html#anxiety">Anxiety</a></li>
+              <li><a href="pages/mental-health-problems.html#depression">Depression</a></li>
+              <li><a href="pages/mental-health-problems.html#stress">Stress</a></li>
+              <li><a href="pages/mental-health-problems.html#sleep">Sleep</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <div class="footer-col-title">Support</div>
+            <ul class="footer-links" role="list">
+              <li><a href="pages/get-help.html">Get Help Now</a></li>
+              <li><a href="pages/get-help.html#crisis">Crisis Resources</a></li>
+              <li><a href="pages/get-help.html#self-help">Self-Help Guides</a></li>
+              <li><a href="pages/resources.html">Browse Resources</a></li>
+              <li><a href="pages/about.html">About Us</a></li>
+              <li><a href="pages/contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <div class="footer-col-title">Urgent Help</div>
+            <ul class="footer-links" role="list">
+              <li><a href="tel:116123">📞 Samaritans: 116 123</a></li>
+              <li><a href="sms:85258">💬 Crisis Text: 85258</a></li>
+              <li><a href="tel:999">🚨 Emergency: 999</a></li>
+              <li><a href="tel:111">🏥 NHS: 111</a></li>
+              <li><a href="tel:08001111">👶 Childline: 0800 1111</a></li>
+            </ul>
+            <div style="margin-top: var(--space-6);">
+              <p style="font-size:var(--text-xs); color:rgba(255,255,255,0.4); line-height:1.6;">
+                All helplines are free and available 24/7 unless otherwise noted.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 MindfulHaven. Registered Charity No. 123456. All rights reserved.</p>
+        <nav class="footer-bottom-links" aria-label="Footer legal links">
+          <a href="pages/about.html#privacy">Privacy Policy</a>
+          <a href="pages/about.html#terms">Terms of Use</a>
+          <a href="pages/about.html#accessibility">Accessibility</a>
+          <a href="pages/about.html#cookies">Cookie Policy</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top" title="Back to top">
+    ↑
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
