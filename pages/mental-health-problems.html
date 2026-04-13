@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Information about common mental health conditions including anxiety, depression, stress, OCD, PTSD, eating disorders, and bipolar disorder." />
+  <title>Mental Health Problems — MindfulHaven</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <div class="crisis-banner" role="alert">
+    <p>⚡ In crisis? Call <a href="tel:116123">116 123</a> (Samaritans) or text SHOUT to <a href="sms:85258">85258</a> — available 24/7</p>
+  </div>
+
+  <header>
+    <nav class="navbar" id="navbar" aria-label="Main navigation">
+      <div class="container">
+        <a href="../index.html" class="nav-logo" aria-label="MindfulHaven Home">
+          <div class="nav-logo-icon" aria-hidden="true">🌿</div>
+          <div><div class="nav-logo-text">MindfulHaven</div><div class="nav-logo-sub">Mental Health for Everyone</div></div>
+        </a>
+        <ul class="nav-links" role="list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="what-is-mental-health.html">What is Mental Health</a></li>
+          <li><a href="mental-health-problems.html" class="active" aria-current="page">Mental Health Problems</a></li>
+          <li><a href="self-harm.html">Self-Harm</a></li>
+          <li><a href="get-help.html">Get Help Now</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="nav-search-btn" id="searchBtn" aria-label="Open search">🔍</button>
+          <a href="../index.html#donate" class="btn btn-donate btn-sm">Donate</a>
+          <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="../index.html">🏠 Home</a>
+      <a href="what-is-mental-health.html">🧠 What is Mental Health</a>
+      <a href="mental-health-problems.html">💙 Mental Health Problems</a>
+      <a href="self-harm.html">🩹 Self-Harm</a>
+      <a href="get-help.html">🆘 Get Help Now</a>
+      <a href="resources.html">📚 Resources</a>
+      <a href="about.html">ℹ️ About Us</a>
+      <a href="contact.html">✉️ Contact</a>
+    </div>
+  </header>
+
+  <div class="search-overlay" id="searchOverlay" role="dialog" aria-modal="true" aria-label="Search">
+    <div class="search-box">
+      <button class="search-close" id="searchClose" aria-label="Close search">✕</button>
+      <h3>Search MindfulHaven</h3>
+      <div class="search-input-wrap">
+        <span class="search-icon" aria-hidden="true">🔍</span>
+        <input type="search" id="searchInput" placeholder="Try 'anxiety', 'sleep', or 'depression'..." aria-label="Search" />
+      </div>
+      <div id="searchResults" style="margin-top:1rem;"></div>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <section class="page-header">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a>
+          <span class="breadcrumb-sep" aria-hidden="true">›</span>
+          <span aria-current="page">Mental Health Problems</span>
+        </nav>
+        <h1>Mental Health Problems</h1>
+        <p>Clear, compassionate information about common mental health conditions — what they are, how they feel, and how to get support.</p>
+      </div>
+    </section>
+
+    <!-- Quick nav -->
+    <section class="section-sm" style="background:var(--color-surface);border-bottom:1px solid var(--color-border);" aria-label="Quick navigation">
+      <div class="container">
+        <p style="font-size:var(--text-sm);font-weight:600;color:var(--color-text-muted);margin-bottom:var(--space-4);">Jump to a condition:</p>
+        <div style="display:flex;flex-wrap:wrap;gap:var(--space-2);">
+          <a href="#anxiety" class="btn btn-outline btn-sm">😰 Anxiety</a>
+          <a href="#depression" class="btn btn-outline btn-sm">💙 Depression</a>
+          <a href="#stress" class="btn btn-outline btn-sm">🌊 Stress</a>
+          <a href="#sleep" class="btn btn-outline btn-sm">🌙 Sleep</a>
+          <a href="#ocd" class="btn btn-outline btn-sm">🔄 OCD</a>
+          <a href="#ptsd" class="btn btn-outline btn-sm">🛡️ PTSD</a>
+          <a href="#eating" class="btn btn-outline btn-sm">🍃 Eating Disorders</a>
+          <a href="#bipolar" class="btn btn-outline btn-sm">⚡ Bipolar</a>
+          <a href="self-harm.html" class="btn btn-outline btn-sm">🩹 Self-Harm</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Conditions grid overview -->
+    <section class="section" aria-labelledby="conditions-heading">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-label">All Conditions</span>
+          <h2 id="conditions-heading" class="section-title">Understanding Mental Health Conditions</h2>
+          <p class="section-desc">Mental health conditions are common, treatable, and nothing to be ashamed of. Understanding them is the first step towards recovery.</p>
+        </div>
+        <div class="grid-4" role="list">
+          <a href="#anxiety" class="condition-card fade-in" role="listitem" style="text-decoration:none;">
+            <div class="condition-icon">😰</div>
+            <h4>Anxiety</h4>
+            <p>Persistent worry and fear that interferes with daily life</p>
+          </a>
+          <a href="#depression" class="condition-card fade-in fade-in-delay-1" role="listitem" style="text-decoration:none;">
+            <div class="condition-icon">💙</div>
+            <h4>Depression</h4>
+            <p>Persistent low mood affecting thoughts, feelings and behaviour</p>
+          </a>
+          <a href="#stress" class="condition-card fade-in fade-in-delay-2" role="listitem" style="text-decoration:none;">
+            <div class="condition-icon">🌊</div>
+            <h4>Stress</h4>
+            <p>Feeling overwhelmed and unable to cope with pressure</p>
+          </a>
+          <a href="#sleep" class="condition-card fade-in fade-in-delay-3" role="listitem" style="text-decoration:none;">
+            <div class="condition-icon">🌙</div>
+            <h4>Sleep Problems</h4>
+            <p>Difficulties falling or staying asleep affecting wellbeing</p>
+          </a>
+          <a href="#ocd" class="condition-card fade-in" role="listitem" style="text-decoration:none;">
+            <div class="condition-icon">🔄</div>
+            <h4>OCD</h4>
+            <p>Obsessive thoughts and repetitive behaviours that cause distress</p>
+          </a>
+          <a href="#ptsd" class="condition-card fade-in fade-in-delay-1" role="listitem" style="text-decoration:none;">
+            <div class="condition-icon">🛡️</div>
+            <h4>PTSD</h4>
+            <p>Trauma responses that persist long after a distressing event</p>
+          </a>
+          <a href="#eating" class="condition-card fade-in fade-in-delay-2" role="listitem" style="text-decoration:none;">
+            <div class="condition-icon">🍃</div>
+            <h4>Eating Disorders</h4>
+            <p>Unhealthy relationships with food, body image, and eating habits</p>
+          </a>
+          <a href="#bipolar" class="condition-card fade-in fade-in-delay-3" role="listitem" style="text-decoration:none;">
+            <div class="condition-icon">⚡</div>
+            <h4>Bipolar Disorder</h4>
+            <p>Extreme mood swings between highs (mania) and lows (depression)</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Individual Conditions -->
+    <section class="section" style="background:var(--color-bg2);" aria-label="Condition details">
+      <div class="container">
+
+        <!-- ANXIETY -->
+        <div id="anxiety" style="scroll-margin-top:100px;">
+          <div class="grid-2" style="align-items:center;gap:var(--space-16);margin-bottom:var(--space-20);">
+            <div class="fade-in">
+              <span class="section-label">Condition</span>
+              <h2 style="margin:var(--space-3) 0 var(--space-4);">😰 Anxiety</h2>
+              <p>Anxiety is a feeling of unease — worry or fear — that can be mild or severe. While some anxiety is normal, anxiety disorders occur when worry becomes persistent and overwhelming.</p>
+              <p style="color:var(--color-text-muted);font-size:var(--text-sm);">Anxiety affects around 1 in 6 people in the UK. It is one of the most common mental health conditions and is very treatable.</p>
+              <div style="margin:var(--space-6) 0;" data-accordion-group>
+                <div class="accordion-item">
+                  <button class="accordion-header" aria-expanded="false">Common symptoms <span class="accordion-icon" aria-hidden="true">+</span></button>
+                  <div class="accordion-body"><p>Feeling nervous or restless · Racing heartbeat · Sweating or trembling · Difficulty concentrating · Sleep problems · Avoiding situations that trigger anxiety · Muscle tension · Stomach upset</p></div>
+                </div>
+                <div class="accordion-item">
+                  <button class="accordion-header" aria-expanded="false">Types of anxiety disorders <span class="accordion-icon" aria-hidden="true">+</span></button>
+                  <div class="accordion-body"><p>Generalised Anxiety Disorder (GAD) · Panic Disorder · Social Anxiety Disorder · Specific Phobias · Separation Anxiety · Agoraphobia · Health Anxiety</p></div>
+                </div>
+                <div class="accordion-item">
+                  <button class="accordion-header" aria-expanded="false">Treatment and self-help <span class="accordion-icon" aria-hidden="true">+</span></button>
+                  <div class="accordion-body"><p>Self-help strategies like breathing exercises, mindfulness, and reducing caffeine can help. Cognitive Behavioural Therapy (CBT) is highly effective. Your GP can also refer you for talking therapies or prescribe medication if needed.</p></div>
+                </div>
+              </div>
+              <a href="get-help.html" class="btn btn-primary">Get Support for Anxiety</a>
+            </div>
+            <div class="fade-in fade-in-delay-1" style="text-align:center;font-size:7rem;padding:var(--space-8);" aria-hidden="true">😰</div>
+          </div>
+        </div>
+
+        <!-- DEPRESSION -->
+        <div id="depression" style="scroll-margin-top:100px;">
+          <div class="grid-2" style="align-items:center;gap:var(--space-16);margin-bottom:var(--space-20);">
+            <div class="fade-in fade-in-delay-1" style="text-align:center;font-size:7rem;padding:var(--space-8);" aria-hidden="true">💙</div>
+            <div class="fade-in">
+              <span class="section-label">Condition</span>
+              <h2 style="margin:var(--space-3) 0 var(--space-4);">💙 Depression</h2>
+              <p>Depression is more than feeling unhappy or fed up for a few days. It's a persistent low mood that affects your ability to function and enjoy life. Depression is real, common, and treatable.</p>
+              <p style="color:var(--color-text-muted);font-size:var(--text-sm);">Around 3 in 100 people in England will experience depression in any given week. You are not alone.</p>
+              <div style="margin:var(--space-6) 0;" data-accordion-group>
+                <div class="accordion-item">
+                  <button class="accordion-header" aria-expanded="false">Common symptoms <span class="accordion-icon" aria-hidden="true">+</span></button>
+                  <div class="accordion-body"><p>Persistent low mood or sadness · Loss of interest in activities · Fatigue and low energy · Feelings of worthlessness or guilt · Difficulty thinking or concentrating · Changes in sleep or appetite · Thoughts of self-harm or suicide</p></div>
+                </div>
+                <div class="accordion-item">
+                  <button class="accordion-header" aria-expanded="false">Types of depression <span class="accordion-icon" aria-hidden="true">+</span></button>
+                  <div class="accordion-body"><p>Major Depressive Disorder · Persistent Depressive Disorder (Dysthymia) · Seasonal Affective Disorder (SAD) · Postnatal Depression · Bipolar Depression · Psychotic Depression</p></div>
+                </div>
+                <div class="accordion-item">
+                  <button class="accordion-header" aria-expanded="false">Treatment options <span class="accordion-icon" aria-hidden="true">+</span></button>
+                  <div class="accordion-body"><p>Talking therapies such as CBT or counselling can be very effective. Antidepressant medication may also be recommended. Lifestyle changes — including exercise, social connection, and routine — can support recovery alongside professional treatment.</p></div>
+                </div>
+              </div>
+              <a href="get-help.html" class="btn btn-primary">Get Support for Depression</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- STRESS -->
+        <div id="stress" style="scroll-margin-top:100px;">
+          <div class="grid-2" style="align-items:center;gap:var(--space-16);margin-bottom:var(--space-20);">
+            <div class="fade-in">
+              <span class="section-label">Condition</span>
+              <h2 style="margin:var(--space-3) 0 var(--space-4);">🌊 Stress</h2>
+              <p>Stress is our body's response to pressure. Some stress can be useful, motivating us to take action. But when stress is chronic or overwhelming, it can harm both mental and physical health.</p>
+              <div style="margin:var(--space-6) 0;" data-accordion-group>
+                <div class="accordion-item">
+                  <button class="accordion-header" aria-expanded="false">Signs of chronic stress <span class="accordion-icon" aria-hidden="true">+</span></button>
+                  <div class="accordion-body"><p>Headaches or muscle tension · Difficulty sleeping · Irritability and mood swings · Difficulty concentrating · Digestive problems · Feeling overwhelmed · Increased use of alcohol or substances</p></div>
+                </div>
+                <div class="accordion-item">
+                  <button class="accordion-header" aria-expanded="false">Managing stress effectively <span class="accordion-icon" aria-hidden="true">+</span></button>
+                  <div class="accordion-body"><p>Identify your triggers · Practise deep breathing and mindfulness · Set clear boundaries · Exercise regularly · Connect with others · Take regular breaks · Talk to a professional if it persists</p></div>
+                </div>
+              </div>
+              <a href="get-help.html" class="btn btn-primary">Get Support for Stress</a>
+            </div>
+            <div class="fade-in fade-in-delay-1" style="text-align:center;font-size:7rem;padding:var(--space-8);" aria-hidden="true">🌊</div>
+          </div>
+        </div>
+
+        <!-- SLEEP -->
+        <div id="sleep" style="scroll-margin-top:100px;">
+          <div class="grid-2" style="align-items:center;gap:var(--space-16);margin-bottom:var(--space-20);">
+            <div class="fade-in fade-in-delay-1" style="text-align:center;font-size:7rem;padding:var(--space-8);" aria-hidden="true">🌙</div>
+            <div class="fade-in">
+              <span class="section-label">Condition</span>
+              <h2 style="margin:var(--space-3) 0 var(--space-4);">🌙 Sleep Problems</h2>
+              <p>Sleep and mental health are deeply intertwined. Poor sleep worsens anxiety and depression. Many mental health problems disrupt sleep, creating a difficult cycle that can be unravelled with the right support.</p>
+              <div style="margin:var(--space-6) 0;" data-accordion-group>
+                <div class="accordion-item">
+                  <button class="accordion-header" aria-expanded="false">Common sleep problems <span class="accordion-icon" aria-hidden="true">+</span></button>
+                  <div class="accordion-body"><p>Insomnia (difficulty falling or staying asleep) · Hypersomnia (sleeping too much) · Nightmares and night terrors · Sleep apnoea · Restless legs · Disrupted sleep rhythm</p></div>
+                </div>
+                <div class="accordion-item">
+                  <button class="accordion-header" aria-expanded="false">Sleep hygiene tips <span class="accordion-icon" aria-hidden="true">+</span></button>
+                  <div class="accordion-body"><p>Keep a consistent sleep schedule · Avoid screens 1 hour before bed · Create a dark, cool, quiet room · Limit caffeine after midday · Exercise regularly (not close to bedtime) · Try a calming bedtime routine · Practice relaxation techniques</p></div>
+                </div>
+              </div>
+              <a href="get-help.html" class="btn btn-primary">Get Support for Sleep</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- OCD -->
+        <div id="ocd" style="scroll-margin-top:100px;">
+          <div class="grid-2" style="align-items:center;gap:var(--space-16);margin-bottom:var(--space-20);">
+            <div class="fade-in">
+              <span class="section-label">Condition</span>
+              <h2 style="margin:var(--space-3) 0 var(--space-4);">🔄 OCD</h2>
+              <p>Obsessive-Compulsive Disorder (OCD) involves unwanted, intrusive thoughts (obsessions) and repetitive behaviours or mental acts (compulsions) performed to reduce anxiety. It is not about being "neat" — it can be deeply distressing.</p>
+              <div style="margin:var(--space-6) 0;" data-accordion-group>
+                <div class="accordion-item">
+                  <button class="accordion-header" aria-expanded="false">Symptoms <span class="accordion-icon" aria-hidden="true">+</span></button>
+                  <div class="accordion-body"><p>Intrusive, unwanted thoughts · Excessive cleaning or checking · Needing things in a specific order · Counting or repeating rituals · Fear of harming yourself or others · Seeking constant reassurance</p></div>
+                </div>
+                <div class="accordion-item">
+                  <button class="accordion-header" aria-expanded="false">Getting help <span class="accordion-icon" aria-hidden="true">+</span></button>
+                  <div class="accordion-body"><p>Exposure and Response Prevention (ERP) therapy is the most effective treatment for OCD. CBT is also used. In some cases, SSRIs (antidepressants) may be prescribed alongside therapy. Talk to your GP for a referral.</p></div>
+                </div>
+              </div>
+              <a href="get-help.html" class="btn btn-primary">Get Support for OCD</a>
+            </div>
+            <div class="fade-in fade-in-delay-1" style="text-align:center;font-size:7rem;padding:var(--space-8);" aria-hidden="true">🔄</div>
+          </div>
+        </div>
+
+        <!-- PTSD -->
+        <div id="ptsd" style="scroll-margin-top:100px;">
+          <div class="grid-2" style="align-items:center;gap:var(--space-16);margin-bottom:var(--space-20);">
+            <div class="fade-in fade-in-delay-1" style="text-align:center;font-size:7rem;padding:var(--space-8);" aria-hidden="true">🛡️</div>
+            <div class="fade-in">
+              <span class="section-label">Condition</span>
+              <h2 style="margin:var(--space-3) 0 var(--space-4);">🛡️ PTSD</h2>
+              <p>Post-Traumatic Stress Disorder (PTSD) can develop after experiencing or witnessing a traumatic event. It causes the nervous system to become stuck in a state of danger, long after the event has passed.</p>
+              <div style="margin:var(--space-6) 0;" data-accordion-group>
+                <div class="accordion-item">
+                  <button class="accordion-header" aria-expanded="false">Key symptoms <span class="accordion-icon" aria-hidden="true">+</span></button>
+                  <div class="accordion-body"><p>Flashbacks and vivid memories · Nightmares · Emotional numbness · Hypervigilance (feeling constantly on guard) · Avoidance of triggers · Irritability and anger outbursts · Difficulty trusting others</p></div>
+                </div>
+                <div class="accordion-item">
+                  <button class="accordion-header" aria-expanded="false">Treatment <span class="accordion-icon" aria-hidden="true">+</span></button>
+                  <div class="accordion-body"><p>Trauma-focused CBT and EMDR (Eye Movement Desensitisation and Reprocessing) are recommended primary treatments. Both should be provided by qualified practitioners. Don't wait — PTSD is very treatable with the right specialist support.</p></div>
+                </div>
+              </div>
+              <a href="get-help.html" class="btn btn-primary">Get Support for PTSD</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Eating Disorders -->
+        <div id="eating" style="scroll-margin-top:100px;">
+          <div class="grid-2" style="align-items:center;gap:var(--space-16);margin-bottom:var(--space-20);">
+            <div class="fade-in">
+              <span class="section-label">Condition</span>
+              <h2 style="margin:var(--space-3) 0 var(--space-4);">🍃 Eating Disorders</h2>
+              <p>Eating disorders are serious mental health conditions characterised by an unhealthy relationship with food, eating, and body image. They affect people of all ages, genders, and backgrounds.</p>
+              <div style="margin:var(--space-6) 0;" data-accordion-group>
+                <div class="accordion-item">
+                  <button class="accordion-header" aria-expanded="false">Types and symptoms <span class="accordion-icon" aria-hidden="true">+</span></button>
+                  <div class="accordion-body"><p>Anorexia Nervosa (severely restricting food) · Bulimia Nervosa (bingeing and purging) · Binge Eating Disorder · ARFID (avoidant/restrictive food intake) · Warning signs include extreme dietary control, distorted body image, food rituals, and hiding eating habits.</p></div>
+                </div>
+                <div class="accordion-item">
+                  <button class="accordion-header" aria-expanded="false">Getting help <span class="accordion-icon" aria-hidden="true">+</span></button>
+                  <div class="accordion-body"><p>Early intervention improves outcomes significantly. Treatment typically involves a team including therapists, dietitians, and sometimes medical professionals. BEAT (beateatingdisorders.org.uk) provides specialist support and helplines.</p></div>
+                </div>
+              </div>
+              <a href="get-help.html" class="btn btn-primary">Get Support</a>
+            </div>
+            <div class="fade-in fade-in-delay-1" style="text-align:center;font-size:7rem;padding:var(--space-8);" aria-hidden="true">🍃</div>
+          </div>
+        </div>
+
+        <!-- Bipolar -->
+        <div id="bipolar" style="scroll-margin-top:100px;">
+          <div class="grid-2" style="align-items:center;gap:var(--space-16);">
+            <div class="fade-in fade-in-delay-1" style="text-align:center;font-size:7rem;padding:var(--space-8);" aria-hidden="true">⚡</div>
+            <div class="fade-in">
+              <span class="section-label">Condition</span>
+              <h2 style="margin:var(--space-3) 0 var(--space-4);">⚡ Bipolar Disorder</h2>
+              <p>Bipolar disorder causes extreme mood swings — from emotional highs (mania or hypomania) to severe lows (depression). These episodes can last days, weeks, or months, but with the right support, many people live well with bipolar disorder.</p>
+              <div style="margin:var(--space-6) 0;" data-accordion-group>
+                <div class="accordion-item">
+                  <button class="accordion-header" aria-expanded="false">Symptoms of mania and depression <span class="accordion-icon" aria-hidden="true">+</span></button>
+                  <div class="accordion-body"><p>Mania: Feeling unusually happy or irritable · Reduced need for sleep · Racing thoughts · Impulsive decisions. Depression: Low energy · Hopelessness · Loss of interest · Difficulty functioning · Both: Disrupted sleep and appetite, difficulty in relationships.</p></div>
+                </div>
+                <div class="accordion-item">
+                  <button class="accordion-header" aria-expanded="false">Treatment <span class="accordion-icon" aria-hidden="true">+</span></button>
+                  <div class="accordion-body"><p>Mood stabilising medication is often the foundation of treatment. Psychoeducation, CBT, and family therapy also help. Regular routines and sleep are especially important. Work with your GP or psychiatrist to find the right plan.</p></div>
+                </div>
+              </div>
+              <a href="get-help.html" class="btn btn-primary">Get Support for Bipolar</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section-sm">
+      <div class="container">
+        <div class="crisis-cta" style="background:var(--color-accent);border-color:var(--color-secondary);">
+          <h3 style="color:var(--color-primary-dark);">Not sure where to start?</h3>
+          <p style="color:var(--color-text-muted);">Speak to a professional or explore our self-help resources. You deserve support.</p>
+          <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+            <a href="get-help.html" class="btn btn-primary">💚 Get Help Now</a>
+            <a href="resources.html" class="btn btn-outline">Browse Resources</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="../index.html" class="nav-logo"><div class="nav-logo-icon" aria-hidden="true">🌿</div><div><div class="nav-logo-text">MindfulHaven</div><div class="nav-logo-sub">Mental Health for Everyone</div></div></a>
+            <p class="footer-desc">Free, evidence-based mental health information and support for everyone.</p>
+            <div class="footer-social" aria-label="Social media links">
+              <a href="#" class="social-icon" aria-label="Twitter">𝕏</a><a href="#" class="social-icon" aria-label="Facebook">f</a><a href="#" class="social-icon" aria-label="Instagram">📷</a>
+            </div>
+          </div>
+          <div class="footer-col"><div class="footer-col-title">Conditions</div><ul class="footer-links"><li><a href="#anxiety">Anxiety</a></li><li><a href="#depression">Depression</a></li><li><a href="#stress">Stress</a></li><li><a href="#sleep">Sleep</a></li><li><a href="#ocd">OCD</a></li><li><a href="#ptsd">PTSD</a></li></ul></div>
+          <div class="footer-col"><div class="footer-col-title">Support</div><ul class="footer-links"><li><a href="get-help.html">Get Help Now</a></li><li><a href="get-help.html#crisis">Crisis Resources</a></li><li><a href="resources.html">Browse Resources</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+          <div class="footer-col"><div class="footer-col-title">Urgent Help</div><ul class="footer-links"><li><a href="tel:116123">📞 Samaritans: 116 123</a></li><li><a href="sms:85258">💬 Crisis Text: 85258</a></li><li><a href="tel:999">🚨 Emergency: 999</a></li></ul></div>
+        </div>
+      </div>
+    </div>
+    <div class="container"><div class="footer-bottom"><p>© 2026 MindfulHaven. Registered Charity No. 123456.</p><nav class="footer-bottom-links" aria-label="Footer legal links"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a><a href="#">Accessibility</a></nav></div></div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+  <script src="../js/main.js"></script>
+</body>
+</html>
