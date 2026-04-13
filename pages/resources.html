@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse free mental health resources — articles, guides, apps, and tools to support your wellbeing. Searchable library from MindfulHaven." />
+  <title>Resources — MindfulHaven</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <div class="crisis-banner" role="alert">
+    <p>⚡ In crisis? Call <a href="tel:116123">116 123</a> (Samaritans) or text SHOUT to <a href="sms:85258">85258</a> — available 24/7</p>
+  </div>
+
+  <header>
+    <nav class="navbar" id="navbar" aria-label="Main navigation">
+      <div class="container">
+        <a href="../index.html" class="nav-logo" aria-label="MindfulHaven Home">
+          <div class="nav-logo-icon" aria-hidden="true">🌿</div>
+          <div><div class="nav-logo-text">MindfulHaven</div><div class="nav-logo-sub">Mental Health for Everyone</div></div>
+        </a>
+        <ul class="nav-links" role="list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="what-is-mental-health.html">What is Mental Health</a></li>
+          <li><a href="mental-health-problems.html">Mental Health Problems</a></li>
+          <li><a href="self-harm.html">Self-Harm</a></li>
+          <li><a href="get-help.html">Get Help Now</a></li>
+          <li><a href="resources.html" class="active" aria-current="page">Resources</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="nav-search-btn" id="searchBtn" aria-label="Open search">🔍</button>
+          <a href="../index.html#donate" class="btn btn-donate btn-sm">Donate</a>
+          <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="../index.html">🏠 Home</a>
+      <a href="what-is-mental-health.html">🧠 What is Mental Health</a>
+      <a href="mental-health-problems.html">💙 Mental Health Problems</a>
+      <a href="self-harm.html">🩹 Self-Harm</a>
+      <a href="get-help.html">🆘 Get Help Now</a>
+      <a href="resources.html">📚 Resources</a>
+      <a href="about.html">ℹ️ About Us</a>
+      <a href="contact.html">✉️ Contact</a>
+    </div>
+  </header>
+
+  <div class="search-overlay" id="searchOverlay" role="dialog" aria-modal="true" aria-label="Search">
+    <div class="search-box">
+      <button class="search-close" id="searchClose" aria-label="Close search">✕</button>
+      <h3>Search MindfulHaven</h3>
+      <div class="search-input-wrap">
+        <span class="search-icon" aria-hidden="true">🔍</span>
+        <input type="search" id="searchInput" placeholder="Try 'anxiety', 'sleep', or 'depression'..." aria-label="Search" />
+      </div>
+      <div id="searchResults" style="margin-top:1rem;"></div>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <section class="page-header">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a>
+          <span class="breadcrumb-sep" aria-hidden="true">›</span>
+          <span aria-current="page">Resources</span>
+        </nav>
+        <h1>Mental Health Resources</h1>
+        <p>A curated library of free guides, articles, apps, and tools to support your mental wellbeing journey.</p>
+      </div>
+    </section>
+
+    <!-- Filter / Search -->
+    <section class="section-sm" style="background:var(--color-surface);border-bottom:1px solid var(--color-border);" aria-label="Filter resources">
+      <div class="container">
+        <div style="display:flex;gap:var(--space-4);flex-wrap:wrap;align-items:center;">
+          <div class="search-input-wrap" style="flex:1;min-width:240px;">
+            <span class="search-icon" aria-hidden="true">🔍</span>
+            <input type="search" id="resourceSearch" placeholder="Filter resources..." aria-label="Filter resources" style="width:100%;padding:0.75rem 1rem 0.75rem 2.75rem;border:2px solid var(--color-border);border-radius:var(--radius-full);font-family:var(--font-body);font-size:var(--text-sm);background:var(--color-bg);outline:none;transition:border-color 0.3s;" />
+          </div>
+          <div style="display:flex;gap:var(--space-2);flex-wrap:wrap;">
+            <span class="section-label" style="cursor:default;">📖 Articles</span>
+            <span class="section-label" style="cursor:default;background:var(--color-accent2);">📱 Apps</span>
+            <span class="section-label" style="cursor:default;background:#f8f0ff;color:#7c4daf;">🎧 Audio</span>
+            <span class="section-label" style="cursor:default;background:#fff8e1;color:#a06020;">📥 Downloads</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Articles -->
+    <section class="section" aria-labelledby="articles-heading">
+      <div class="container">
+        <h2 id="articles-heading" style="margin-bottom:var(--space-8);">📖 Articles &amp; Guides</h2>
+        <div style="display:flex;flex-direction:column;gap:var(--space-4);">
+          <div class="resource-card resource-filterable fade-in">
+            <div class="resource-icon" aria-hidden="true">😰</div>
+            <div>
+              <span class="article-tag">Anxiety</span>
+              <h4 style="margin:var(--space-2) 0;">Breaking the Anxiety Cycle: A Step-by-Step Guide</h4>
+              <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-3);">Learn to identify anxiety triggers and interrupt the cycle with proven cognitive-behavioral techniques.</p>
+              <div style="display:flex;align-items:center;gap:var(--space-4);">
+                <a href="mental-health-problems.html#anxiety" class="topic-link">Read Guide →</a>
+                <span style="font-size:var(--text-xs);color:var(--color-text-light);">6 min read · Dr. Lisa Chen</span>
+              </div>
+            </div>
+          </div>
+          <div class="resource-card resource-filterable fade-in">
+            <div class="resource-icon" aria-hidden="true">💙</div>
+            <div>
+              <span class="article-tag">Depression</span>
+              <h4 style="margin:var(--space-2) 0;">Living With Depression: A Compassionate Guide</h4>
+              <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-3);">Understanding depression, recognising the signs, and taking meaningful steps toward recovery.</p>
+              <div style="display:flex;align-items:center;gap:var(--space-4);">
+                <a href="mental-health-problems.html#depression" class="topic-link">Read Guide →</a>
+                <span style="font-size:var(--text-xs);color:var(--color-text-light);">8 min read · Prof. James Owen</span>
+              </div>
+            </div>
+          </div>
+          <div class="resource-card resource-filterable fade-in">
+            <div class="resource-icon" aria-hidden="true">🌿</div>
+            <div>
+              <span class="article-tag">Mindfulness</span>
+              <h4 style="margin:var(--space-2) 0;">10 Mindfulness Techniques That Actually Work</h4>
+              <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-3);">Evidence-based mindfulness practices for busy people who don't have hours to spare.</p>
+              <div style="display:flex;align-items:center;gap:var(--space-4);">
+                <a href="#" class="topic-link">Read Guide →</a>
+                <span style="font-size:var(--text-xs);color:var(--color-text-light);">5 min read · Dr. Sarah Mitchell</span>
+              </div>
+            </div>
+          </div>
+          <div class="resource-card resource-filterable fade-in">
+            <div class="resource-icon" aria-hidden="true">🌙</div>
+            <div>
+              <span class="article-tag">Sleep</span>
+              <h4 style="margin:var(--space-2) 0;">Why Sleep is the Foundation of Your Mental Health</h4>
+              <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-3);">Discover the science behind sleep and mental health, and get practical tips to improve your sleep tonight.</p>
+              <div style="display:flex;align-items:center;gap:var(--space-4);">
+                <a href="mental-health-problems.html#sleep" class="topic-link">Read Guide →</a>
+                <span style="font-size:var(--text-xs);color:var(--color-text-light);">7 min read · Prof. James Owen</span>
+              </div>
+            </div>
+          </div>
+          <div class="resource-card resource-filterable fade-in">
+            <div class="resource-icon" aria-hidden="true">🤝</div>
+            <div>
+              <span class="article-tag">Support</span>
+              <h4 style="margin:var(--space-2) 0;">How to Support Someone with a Mental Health Problem</h4>
+              <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-3);">Practical, compassionate guidance for friends and family who want to help someone they love.</p>
+              <div style="display:flex;align-items:center;gap:var(--space-4);">
+                <a href="#" class="topic-link">Read Guide →</a>
+                <span style="font-size:var(--text-xs);color:var(--color-text-light);">6 min read · MindfulHaven Team</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Apps -->
+    <section class="section" style="background:var(--color-bg2);" aria-labelledby="apps-heading">
+      <div class="container">
+        <h2 id="apps-heading" style="margin-bottom:var(--space-8);">📱 Recommended Mental Health Apps</h2>
+        <div class="grid-3">
+          <div class="card card-body fade-in resource-filterable">
+            <div style="font-size:2.5rem;margin-bottom:var(--space-3);" aria-hidden="true">🧘</div>
+            <span class="article-tag" style="background:#e8f5e9;">Mindfulness</span>
+            <h4 style="margin:var(--space-2) 0;">Headspace</h4>
+            <p style="font-size:var(--text-sm);color:var(--color-text-muted);">Guided meditation, sleep sounds, and mindfulness exercises. Great for beginners. Free trial available.</p>
+            <a href="#" class="topic-link" aria-label="Learn about Headspace app">Download →</a>
+          </div>
+          <div class="card card-body fade-in fade-in-delay-1 resource-filterable">
+            <div style="font-size:2.5rem;margin-bottom:var(--space-3);" aria-hidden="true">😌</div>
+            <span class="article-tag" style="background:#e3f2fd;">Calm</span>
+            <h4 style="margin:var(--space-2) 0;">Calm</h4>
+            <p style="font-size:var(--text-sm);color:var(--color-text-muted);">Sleep stories, breathing exercises, and relaxation content. Particularly effective for anxiety and sleep.</p>
+            <a href="#" class="topic-link" aria-label="Learn about Calm app">Download →</a>
+          </div>
+          <div class="card card-body fade-in fade-in-delay-2 resource-filterable">
+            <div style="font-size:2.5rem;margin-bottom:var(--space-3);" aria-hidden="true">🤖</div>
+            <span class="article-tag" style="background:#f3e5f5;">AI Support</span>
+            <h4 style="margin:var(--space-2) 0;">Wysa</h4>
+            <p style="font-size:var(--text-sm);color:var(--color-text-muted);">An AI-powered mental health companion offering CBT-based techniques, mood tracking, and guided exercises.</p>
+            <a href="#" class="topic-link" aria-label="Learn about Wysa app">Download →</a>
+          </div>
+          <div class="card card-body fade-in resource-filterable">
+            <div style="font-size:2.5rem;margin-bottom:var(--space-3);" aria-hidden="true">📔</div>
+            <span class="article-tag" style="background:#fff8e1;">Journalling</span>
+            <h4 style="margin:var(--space-2) 0;">Daylio</h4>
+            <p style="font-size:var(--text-sm);color:var(--color-text-muted);">A micro-diary and mood tracker. No writing needed — just select your mood and activities to spot patterns.</p>
+            <a href="#" class="topic-link" aria-label="Learn about Daylio app">Download →</a>
+          </div>
+          <div class="card card-body fade-in fade-in-delay-1 resource-filterable">
+            <div style="font-size:2.5rem;margin-bottom:var(--space-3);" aria-hidden="true">💆</div>
+            <span class="article-tag">CBT</span>
+            <h4 style="margin:var(--space-2) 0;">Woebot</h4>
+            <p style="font-size:var(--text-sm);color:var(--color-text-muted);">A conversational agent using CBT techniques to help with mild-to-moderate depression and anxiety. Evidence-backed.</p>
+            <a href="#" class="topic-link" aria-label="Learn about Woebot app">Download →</a>
+          </div>
+          <div class="card card-body fade-in fade-in-delay-2 resource-filterable">
+            <div style="font-size:2.5rem;margin-bottom:var(--space-3);" aria-hidden="true">🌊</div>
+            <span class="article-tag" style="background:#e8f5e9;">Breathing</span>
+            <h4 style="margin:var(--space-2) 0;">Breathe2Relax</h4>
+            <p style="font-size:var(--text-sm);color:var(--color-text-muted);">Developed by the US National Center for PTSD. Teaches diaphragmatic breathing to reduce stress and anxiety. Free.</p>
+            <a href="#" class="topic-link" aria-label="Learn about Breathe2Relax app">Download →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Downloads -->
+    <section class="section" aria-labelledby="downloads-heading">
+      <div class="container">
+        <h2 id="downloads-heading" style="margin-bottom:var(--space-8);">📥 Free Downloadable Guides</h2>
+        <div class="grid-3">
+          <div class="card card-body fade-in resource-filterable" style="text-align:center;">
+            <div style="font-size:3rem;margin-bottom:var(--space-3);" aria-hidden="true">📄</div>
+            <h4>Understanding Anxiety</h4>
+            <p style="font-size:var(--text-sm);color:var(--color-text-muted);">A 12-page guide covering what anxiety is, the types, and evidence-based coping strategies.</p>
+            <a href="#" class="btn btn-outline btn-sm" aria-label="Download Understanding Anxiety PDF guide">Download PDF</a>
+          </div>
+          <div class="card card-body fade-in fade-in-delay-1 resource-filterable" style="text-align:center;">
+            <div style="font-size:3rem;margin-bottom:var(--space-3);" aria-hidden="true">📄</div>
+            <h4>Sleep Hygiene Checklist</h4>
+            <p style="font-size:var(--text-sm);color:var(--color-text-muted);">A printable evening checklist to help you build better sleep habits step by step.</p>
+            <a href="#" class="btn btn-outline btn-sm" aria-label="Download Sleep Hygiene Checklist PDF">Download PDF</a>
+          </div>
+          <div class="card card-body fade-in fade-in-delay-2 resource-filterable" style="text-align:center;">
+            <div style="font-size:3rem;margin-bottom:var(--space-3);" aria-hidden="true">📄</div>
+            <h4>Crisis Safety Plan Template</h4>
+            <p style="font-size:var(--text-sm);color:var(--color-text-muted);">A fillable template to plan your personal coping strategies and support contacts for difficult times.</p>
+            <a href="#" class="btn btn-outline btn-sm" aria-label="Download Crisis Safety Plan template PDF">Download PDF</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- External Organisations -->
+    <section class="section" style="background:linear-gradient(180deg,var(--color-accent) 0%,var(--color-bg) 100%);" aria-labelledby="orgs-heading">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-label">External Support</span>
+          <h2 id="orgs-heading" class="section-title">Trusted Organisations</h2>
+          <p class="section-desc">These organisations provide specialist support, research, and services across the UK.</p>
+        </div>
+        <div class="grid-3">
+          <div class="card card-body fade-in resource-filterable" style="text-align:center;">
+            <div style="font-size:2rem;margin-bottom:var(--space-3);" aria-hidden="true">🧠</div>
+            <h4>Mind</h4>
+            <p style="font-size:var(--text-sm);color:var(--color-text-muted);">Mental health charity providing advice and advocacy across England and Wales.</p>
+            <a href="https://www.mind.org.uk" target="_blank" rel="noopener" class="topic-link" aria-label="Visit Mind website (opens in new tab)">mind.org.uk →</a>
+          </div>
+          <div class="card card-body fade-in fade-in-delay-1 resource-filterable" style="text-align:center;">
+            <div style="font-size:2rem;margin-bottom:var(--space-3);" aria-hidden="true">📞</div>
+            <h4>Samaritans</h4>
+            <p style="font-size:var(--text-sm);color:var(--color-text-muted);">Free, 24/7 emotional support. Call 116 123 anytime, for any reason.</p>
+            <a href="https://www.samaritans.org" target="_blank" rel="noopener" class="topic-link" aria-label="Visit Samaritans website (opens in new tab)">samaritans.org →</a>
+          </div>
+          <div class="card card-body fade-in fade-in-delay-2 resource-filterable" style="text-align:center;">
+            <div style="font-size:2rem;margin-bottom:var(--space-3);" aria-hidden="true">🌻</div>
+            <h4>YoungMinds</h4>
+            <p style="font-size:var(--text-sm);color:var(--color-text-muted);">The UK's leading charity fighting for young people's mental health.</p>
+            <a href="https://www.youngminds.org.uk" target="_blank" rel="noopener" class="topic-link" aria-label="Visit YoungMinds website (opens in new tab)">youngminds.org.uk →</a>
+          </div>
+          <div class="card card-body fade-in resource-filterable" style="text-align:center;">
+            <div style="font-size:2rem;margin-bottom:var(--space-3);" aria-hidden="true">🏥</div>
+            <h4>NHS Mental Health</h4>
+            <p style="font-size:var(--text-sm);color:var(--color-text-muted);">Access NHS mental health services, self-referral, and approved apps.</p>
+            <a href="https://www.nhs.uk/mental-health/" target="_blank" rel="noopener" class="topic-link" aria-label="Visit NHS mental health page (opens in new tab)">nhs.uk →</a>
+          </div>
+          <div class="card card-body fade-in fade-in-delay-1 resource-filterable" style="text-align:center;">
+            <div style="font-size:2rem;margin-bottom:var(--space-3);" aria-hidden="true">🕊️</div>
+            <h4>SANE</h4>
+            <p style="font-size:var(--text-sm);color:var(--color-text-muted);">Emotional support and information for people affected by mental illness.</p>
+            <a href="https://www.sane.org.uk" target="_blank" rel="noopener" class="topic-link" aria-label="Visit SANE website (opens in new tab)">sane.org.uk →</a>
+          </div>
+          <div class="card card-body fade-in fade-in-delay-2 resource-filterable" style="text-align:center;">
+            <div style="font-size:2rem;margin-bottom:var(--space-3);" aria-hidden="true">🌸</div>
+            <h4>Beat (Eating Disorders)</h4>
+            <p style="font-size:var(--text-sm);color:var(--color-text-muted);">UK's eating disorder charity providing helplines, online support groups, and resources.</p>
+            <a href="https://www.beateatingdisorders.org.uk" target="_blank" rel="noopener" class="topic-link" aria-label="Visit Beat websit (opens in new tab)">beateatingdisorders.org.uk →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="../index.html" class="nav-logo"><div class="nav-logo-icon" aria-hidden="true">🌿</div><div><div class="nav-logo-text">MindfulHaven</div><div class="nav-logo-sub">Mental Health for Everyone</div></div></a>
+            <p class="footer-desc">Free, evidence-based mental health information and support for everyone.</p>
+            <div class="footer-social" aria-label="Social media links"><a href="#" class="social-icon" aria-label="Twitter">𝕏</a><a href="#" class="social-icon" aria-label="Facebook">f</a></div>
+          </div>
+          <div class="footer-col"><div class="footer-col-title">Resources</div><ul class="footer-links"><li><a href="#">Articles</a></li><li><a href="#">Apps</a></li><li><a href="#">Downloads</a></li><li><a href="#">Organisations</a></li></ul></div>
+          <div class="footer-col"><div class="footer-col-title">Support</div><ul class="footer-links"><li><a href="get-help.html">Get Help Now</a></li><li><a href="get-help.html#crisis">Crisis Resources</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+          <div class="footer-col"><div class="footer-col-title">Urgent Help</div><ul class="footer-links"><li><a href="tel:116123">📞 Samaritans: 116 123</a></li><li><a href="sms:85258">💬 Crisis Text: 85258</a></li><li><a href="tel:999">🚨 Emergency: 999</a></li></ul></div>
+        </div>
+      </div>
+    </div>
+    <div class="container"><div class="footer-bottom"><p>© 2026 MindfulHaven. Registered Charity No. 123456.</p><nav class="footer-bottom-links" aria-label="Footer legal links"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a><a href="#">Accessibility</a></nav></div></div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+  <script src="../js/main.js"></script>
+</body>
+</html>
